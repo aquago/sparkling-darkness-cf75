@@ -416,7 +416,7 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // Close menu when clicking outside
+        // To close menu when clicking outside
         document.addEventListener('click', function (event) {
             if (!mobileMenu.classList.contains('hidden')) {
                 if (!mobileMenu.contains(event.target) && event.target !== hamburger) {
