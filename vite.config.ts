@@ -1,8 +1,12 @@
 import { defineConfig } from 'vite';
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
-  base: '/', // Base path for Cloudflare Pages
+  base: '/',
   build: {
-    outDir: 'dist' // Output directory
-  }
+    outDir: 'dist',
+  },
+  plugins: [
+    tailwindcss(),
+  ],
 });
