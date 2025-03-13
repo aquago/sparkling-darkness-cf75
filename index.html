@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portman Coffee</title>
-    <link href="styles.css" rel="stylesheet">
+    <link href="/styles.css" rel="stylesheet"> <!-- Adjusted path for Vite build -->
     <style>
         html {
             scroll-behavior: smooth;
@@ -15,11 +15,12 @@
 
 <body class="bg-black text-[#F7F7F7]"
     style="background-image: url('https://images.unsplash.com/photo-1493925410384-84f842e616fb?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); background-size: cover; background-position: center; background-attachment: fixed;">
-    <nav class="fixed top-0 left-0 w-full backdrop-blur-lg bg-[#2a2a2a] bg-opacity-70 shadow-md py-4 z-50">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full bg-opacity-20 bg-white backdrop-blur-md border border-white border-opacity-20 shadow-lg py-4 z-50">
         <div class="container mx-auto flex justify-between items-center px-6">
             <div class="relative h-10 w-32 flex items-center">
                 <a href="#" title="Go to top">
-                    <img src="portman-logo.png" alt="Portman Coffee Logo" class="w-32 h-auto object-contain">
+                    <img src="/portman-logo.png" alt="Portman Coffee Logo" class="w-32 h-auto object-contain">
                 </a>
             </div>
             <button id="hamburger" class="md:hidden text-[#F7F7F7]">
@@ -30,7 +31,6 @@
                 </svg>
             </button>
             <ul id="nav-links" class="hidden md:flex space-x-6">
-                <!-- Navigation links remain unchanged -->
                 <li><a href="#" class="text-[#F7F7F7] hover:text-[#FFB22C]">Home</a></li>
                 <li><a href="#packages" class="text-[#F7F7F7] hover:text-[#FFB22C]">Menu</a></li>
                 <li><a href="#services" class="text-[#F7F7F7] hover:text-[#FFB22C]">Services</a></li>
@@ -38,7 +38,7 @@
                 <li><a href="#contact" class="text-[#F7F7F7] hover:text-[#FFB22C]">Contact</a></li>
             </ul>
         </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-[#2a2a2a] bg-opacity-90 w-full absolute top-16 left-0">
+        <div id="mobile-menu" class="hidden md:hidden bg-opacity-20 bg-white backdrop-blur-md border border-white border-opacity-20 w-full absolute top-16 left-0">
             <ul class="flex flex-col items-center space-y-4 py-4">
                 <li><a href="#" class="text-[#F7F7F7] hover:text-[#FFB22C]">Home</a></li>
                 <li><a href="#packages" class="text-[#F7F7F7] hover:text-[#FFB22C]">Menu</a></li>
@@ -52,7 +52,7 @@
     <!-- Welcome to Portman Coffee Section -->
     <header class="h-[400px] flex items-center justify-center text-white mt-16 px-6">
         <div
-            class="text-center backdrop-blur-sm p-8 rounded-2xl bg-black bg-opacity-30 border border-[#F7F7F7] hover:shadow-lg hover:border-[#FFB22C] transition duration-300">
+            class="text-center bg-opacity-20 bg-white backdrop-blur-md border border-white border-opacity-20 shadow-lg p-8 rounded-2xl hover:shadow-xl hover:border-[#FFB22C] transition duration-300">
             <h2 class="text-4xl font-bold">Welcome to Portman Coffee</h2>
             <p class="mt-2 text-lg">Freshly brewed coffee, just for you.</p>
             <a href="#packages"
@@ -67,7 +67,7 @@
 
         <!-- Introduction text -->
         <div
-            class="max-w-3xl mx-auto mb-12 backdrop-blur-lg bg-[#2a2a2a] bg-opacity-40 p-6 rounded-2xl border border-[#F7F7F7] hover:shadow-lg hover:border-[#FFB22C] transition duration-300 text-center">
+            class="max-w-3xl mx-auto mb-12 bg-opacity-20 bg-white backdrop-blur-md border border-white border-opacity-20 shadow-lg p-6 rounded-2xl hover:shadow-xl hover:border-[#FFB22C] transition duration-300 text-center">
             <p class="text-[#F7F7F7] leading-relaxed">
                 We bring premium cafe experience to your special occasions, whether it's a wedding, birthday, product
                 launch, or intimate gathering. Our highly-trained baristas server expertly brewed coffee using
@@ -84,7 +84,7 @@
             <!-- Left column: Coffee Catering -->
             <div class="flex flex-col">
                 <div
-                    class="backdrop-blur-lg bg-[#2a2a2a] bg-opacity-40 p-8 rounded-2xl border border-[#F7F7F7] hover:shadow-lg hover:border-[#FFB22C] transition duration-300 h-full">
+                    class="bg-opacity-20 bg-white backdrop-blur-md border border-white border-opacity-20 shadow-lg p-8 rounded-2xl hover:shadow-xl hover:border-[#FFB22C] transition duration-300 h-full">
                     <div class="flex items-center mb-6">
                         <span class="bg-[#854836] p-3 rounded-full mr-4">
                             <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"
@@ -101,19 +101,19 @@
                         experience to you.</p>
                     <ul class="text-[#F7F7F7] space-y-3">
                         <li class="flex items-start">
-                            <span class="text-[#FFB22C] mr-2">&bull;</span>
+                            <span class="text-[#FFB22C]">•</span>
                             <span>Professional baristas on-site</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#FFB22C] mr-2">&bull;</span>
+                            <span class="text-[#FFB22C]">•</span>
                             <span>Customizable menu options</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#FFB22C] mr-2">&bull;</span>
+                            <span class="text-[#FFB22C]">•</span>
                             <span>Elegant coffee bar setup</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#FFB22C] mr-2">&bull;</span>
+                            <span class="text-[#FFB22C]">•</span>
                             <span>Specialty coffee equipment</span>
                         </li>
                     </ul>
@@ -124,7 +124,7 @@
             <div class="flex flex-col space-y-8">
                 <!-- Coffee Workshops -->
                 <div
-                    class="backdrop-blur-lg bg-[#2a2a2a] bg-opacity-40 p-6 rounded-2xl border border-[#F7F7F7] hover:shadow-lg hover:border-[#FFB22C] transition duration-300">
+                    class="bg-opacity-20 bg-white backdrop-blur-md border border-white border-opacity-20 shadow-lg p-6 rounded-2xl hover:shadow-xl hover:border-[#FFB22C] transition duration-300">
                     <div class="flex items-center mb-4">
                         <span class="bg-[#854836] p-3 rounded-full mr-4">
                             <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"
@@ -142,7 +142,7 @@
 
                 <!-- Coffee Subscription -->
                 <div
-                    class="backdrop-blur-lg bg-[#2a2a2a] bg-opacity-40 p-6 rounded-2xl border border-[#F7F7F7] hover:shadow-lg hover:border-[#FFB22C] transition duration-300">
+                    class="bg-opacity-20 bg-white backdrop-blur-md border border-white border-opacity-20 shadow-lg p-6 rounded-2xl hover:shadow-xl hover:border-[#FFB22C] transition duration-300">
                     <div class="flex items-center mb-4">
                         <span class="bg-[#854836] p-3 rounded-full mr-4">
                             <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"
@@ -166,10 +166,9 @@
     <section id="packages" class="container mx-auto py-16 px-6">
         <h3 class="text-3xl font-semibold text-center text-[#F7F7F7]">Our Packages</h3>
         <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
-
             <!-- Economy -->
             <div
-                class="con-caf backdrop-blur-lg bg-[#2a2a2a] bg-opacity-40 p-6 shadow-md rounded-2xl border border-[#F7F7F7] hover:shadow-lg hover:border-[#FFB22C] transition duration-300">
+                class="bg-opacity-20 bg-white backdrop-blur-md border border-white border-opacity-20 shadow-lg p-6 rounded-2xl hover:shadow-xl hover:border-[#FFB22C] transition duration-300">
                 <h4 class="text-xl font-bold text-[#FFB22C] flex items-center">
                     <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -180,25 +179,25 @@
                     Economy
                 </h4>
                 <ul class="text-[#F7F7F7] mt-4 space-y-2">
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">100 cups for ₱12,780</span></li>
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">300 cups for ₱23,850</span></li>
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">1000 cups for ₱63,000</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">100 cups for ₱12,780</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">300 cups for ₱23,850</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">1000 cups for ₱63,000</span></li>
                 </ul>
                 <p class="text-[#FFB22C] text-sm italic mt-2">*VATs exclusive</p>
                 <h5 class="mt-4 text-lg font-bold text-[#FFB22C]">Menu</h5>
                 <ul class="text-[#F7F7F7] mt-2 space-y-2">
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">Americano</span></li>
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">Latte</span></li>
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">Cappuccino</span></li>
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">Aerocano</span></li>
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">Mocha</span></li>
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">Chocolate</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">Americano</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">Latte</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">Cappuccino</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">Aerocano</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">Mocha</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">Chocolate</span></li>
                 </ul>
             </div>
 
-            <!-- Busines Class -->
+            <!-- Business Class -->
             <div
-                class="con-caf backdrop-blur-lg bg-[#2a2a2a] bg-opacity-40 p-6 shadow-md rounded-2xl border border-[#F7F7F7] hover:shadow-lg hover:border-[#FFB22C] transition duration-300">
+                class="bg-opacity-20 bg-white backdrop-blur-md border border-white border-opacity-20 shadow-lg p-6 rounded-2xl hover:shadow-xl hover:border-[#FFB22C] transition duration-300">
                 <h4 class="text-xl font-bold text-[#FFB22C] flex items-center">
                     <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -209,24 +208,24 @@
                     Business Class
                 </h4>
                 <ul class="text-[#F7F7F7] mt-4 space-y-2">
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">100 cups for ₱14,780</span></li>
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">300 cups for ₱26,500</span></li>
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">1000 cups for ₱70,000</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">100 cups for ₱14,780</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">300 cups for ₱26,500</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">1000 cups for ₱70,000</span></li>
                 </ul>
                 <p class="text-[#FFB22C] text-sm italic mt-2">*VATs exclusive</p>
                 <h5 class="mt-4 text-lg font-bold text-[#FFB22C]">Menu</h5>
                 <ul class="text-[#F7F7F7] mt-2 space-y-2">
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">Economy Menu plus</span></li>
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">Caramel Latte</span></li>
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">Spanish Latte</span></li>
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">Cucumber Lemon Soda</span></li>
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">Strawberry Mint Soda</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">Economy Menu plus</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">Caramel Latte</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">Spanish Latte</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">Cucumber Lemon Soda</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">Strawberry Mint Soda</span></li>
                 </ul>
             </div>
 
             <!-- First Class -->
             <div
-                class="con-caf backdrop-blur-lg bg-[#2a2a2a] bg-opacity-40 p-6 shadow-md rounded-2xl border border-[#F7F7F7] hover:shadow-lg hover:border-[#FFB22C] transition duration-300">
+                class="bg-opacity-20 bg-white backdrop-blur-md border border-white border-opacity-20 shadow-lg p-6 rounded-2xl hover:shadow-xl hover:border-[#FFB22C] transition duration-300">
                 <h4 class="text-xl font-bold text-[#FFB22C] flex items-center">
                     <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
@@ -237,19 +236,18 @@
                     First Class
                 </h4>
                 <ul class="text-[#F7F7F7] mt-4 space-y-2">
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">100 cups for ₱15,620</span></li>
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">300 cups for ₱29,150</span></li>
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">1000 cups for ₱77,000</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">100 cups for ₱15,620</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">300 cups for ₱29,150</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">1000 cups for ₱77,000</span></li>
                 </ul>
                 <p class="text-[#FFB22C] text-sm italic mt-2">*VATs exclusive</p>
                 <h5 class="mt-4 text-lg font-bold text-[#FFB22C]">Menu</h5>
                 <ul class="text-[#F7F7F7] mt-2 space-y-2">
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">Business Class Menu plus</span></li>
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">Orange Espresso</span></li>
-                    <li class="text-[#FFB22C]">&bull; <span class="text-[#F7F7F7]">Sweet Macha</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">Business Class Menu plus</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">Orange Espresso</span></li>
+                    <li class="text-[#FFB22C]">• <span class="text-[#F7F7F7]">Sweet Macha</span></li>
                 </ul>
             </div>
-
         </div>
     </section>
 
@@ -258,7 +256,7 @@
         <h3 class="text-3xl font-semibold text-center text-[#F7F7F7] mb-12">Contact Us</h3>
 
         <div
-            class="max-w-3xl mx-auto backdrop-blur-lg bg-[#2a2a2a] bg-opacity-40 p-8 rounded-2xl border border-[#F7F7F7] hover:shadow-lg hover:border-[#FFB22C] transition duration-300">
+            class="max-w-3xl mx-auto bg-opacity-20 bg-white backdrop-blur-md border border-white border-opacity-20 shadow-lg p-8 rounded-2xl hover:shadow-xl hover:border-[#FFB22C] transition duration-300">
             <!-- Added custom package text -->
             <div class="text-center mb-8">
                 <h4 class="text-2xl font-bold text-[#FFB22C]">Need a custom package?</h4>
@@ -295,7 +293,7 @@
                     </span>
                     <div>
                         <h4 class="text-xl font-bold text-[#FFB22C]">Email</h4>
-                        <p class="text-[#F7F7F7] mt-2">portmancoffee@gmail.com</p>
+                        <p class="text-[#F7F7F7] mt-2"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="67270c10160f030c010d0404070715240e020a0f4d000c0e">[email&#160;protected]</a></p>
                     </div>
                 </div>
 
@@ -327,31 +325,31 @@
     <section id="terms" class="container mx-auto py-16 px-6">
         <h3 class="text-3xl font-semibold text-center text-[#F7F7F7] mb-12">Terms and Conditions</h3>
         <div
-            class="max-w-3xl mx-auto backdrop-blur-lg bg-[#2a2a2a] bg-opacity-40 p-8 rounded-2xl border border-[#F7F7F7] hover:shadow-lg hover:border-[#FFB22C] transition duration-300">
+            class="max-w-3xl mx-auto bg-opacity-20 bg-white backdrop-blur-md border border-white border-opacity-20 shadow-lg p-8 rounded-2xl hover:shadow-xl hover:border-[#FFB22C] transition duration-300">
             <div class="space-y-8">
                 <div>
                     <h4 class="text-2xl font-bold text-[#FFB22C] mb-4">Terms</h4>
                     <ul class="text-[#F7F7F7] space-y-2">
                         <li class="flex items-start">
-                            <span class="text-[#FFB22C] mr-2">&bull;</span>
+                            <span class="text-[#FFB22C]">•</span>
                             <span>50% downpayment (non-refundable)</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#FFB22C] mr-2">&bull;</span>
+                            <span class="text-[#FFB22C]">•</span>
                             <span>50% balance 3 days before the event</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#FFB22C] mr-2">&bull;</span>
+                            <span class="text-[#FFB22C]">•</span>
                             <span>Event cancellations due to fortuitous event (25% reimbursable or free One(1)
                                 rescheduling)</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#FFB22C] mr-2">&bull;</span>
+                            <span class="text-[#FFB22C]">•</span>
                             <span>Cancellations last-minute cancellations (3 day prior to the booked date shall hold the
                                 client liable for the payment of 100% of total fees)</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#FFB22C] mr-2">&bull;</span>
+                            <span class="text-[#FFB22C]">•</span>
                             <span>The location must have at least 4000w, 220v minimum power supply</span>
                         </li>
                     </ul>
@@ -361,20 +359,20 @@
                     <h5 class="mt-4 text-lg font-bold text-[#FFB22C]">BDO Checking</h5>
                     <ul class="text-[#F7F7F7] space-y-2">
                         <li class="flex items-start">
-                            <span class="text-[#FFB22C] mr-2">&bull;</span>
+                            <span class="text-[#FFB22C]">•</span>
                             <span>Account Name: Paul Romeo Polloso</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#FFB22C] mr-2">&bull;</span>
+                            <span class="text-[#FFB22C]">•</span>
                             <span>BAccount Number: 010718003048</span>
                         </li>
                         <h5 class="mt-4 text-lg font-bold text-[#FFB22C]">GCASH</h5>
                         <li class="flex items-start">
-                            <span class="text-[#FFB22C] mr-2">&bull;</span>
+                            <span class="text-[#FFB22C]">•</span>
                             <span>Account Name: Paul Romeo P*</span>
                         </li>
                         <li class="flex items-start">
-                            <span class="text-[#FFB22C] mr-2">&bull;</span>
+                            <span class="text-[#FFB22C]">•</span>
                             <span>Account Number: +639771072888</span>
                         </li>
                     </ul>
@@ -387,7 +385,7 @@
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
             <div class="relative h-10 w-32 flex items-center">
                 <a href="#" title="Go to top">
-                    <img src="portman-logo.png" alt="Portman Coffee Logo" class="w-32 h-auto object-contain">
+                    <img src="/portman-logo.png" alt="Portman Coffee Logo" class="w-32 h-auto object-contain">
                 </a>
             </div>
             <div class="flex space-x-6 mt-4 md:mt-0">
@@ -404,6 +402,7 @@
         </div>
     </footer>
 
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
         crossorigin="anonymous"></script>
     <script>
@@ -434,6 +433,7 @@
         });
     </script>
 
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'91f93e0b3a5a455e',t:'MTc0MTg0NDkwNi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
 </body>
 
 </html>
